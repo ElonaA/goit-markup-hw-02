@@ -25,13 +25,15 @@ body {
 
 /* Стили для страницы Студия index.html */
 /* Logo*/
-.logo .logo-blue {
+.logo,
+.logo-blue {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+  color: var(--primary-title-color);
 }
 .logo-blue {
   color: var(--accent-color);
@@ -43,6 +45,7 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  color: var(--primary-title-color);
 }
 .site-nav .link:hover {
   color: var(--accent-color);
@@ -56,6 +59,7 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  color: var(--primary-title-color);
 }
 .contact:hover {
   color: var(--accent-color);
@@ -118,7 +122,7 @@ body {
   color: var(--primary-white-color);
 }
 /*Section Our Team*/
-.title-team > text {
+.title-team .text {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
