@@ -10,7 +10,8 @@
   --primary-title-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
-  --bacground-footer: #2f303a;
+  --background-footer: #2f303a;
+  --background-icon: #f5f4fa;
 }
 
 body {
@@ -18,58 +19,67 @@ body {
   color: var(--primary-title-color);
 
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
   letter-spacing: 0.03em;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
 }
 
 /* Стили для страницы Студия index.html */
+.list {
+  list-style: none;
+}
+
 /* Logo*/
 .logo,
-.logo-blue {
+.logo-header {
   font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
   color: var(--primary-title-color);
 }
-.logo-blue {
+.logo-header {
   color: var(--accent-color);
 }
 /* Navigation */
 .site-nav .link {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-title-color);
 }
-.site-nav .link:hover {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
 }
 .site-nav .link.current {
   color: var(--accent-color);
 }
 /* Contact*/
-.contact {
+.mail,
+.phone {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 2;
   letter-spacing: 0.02em;
-  color: var(--primary-title-color);
+  color: var(--text-color);
 }
-.contact:hover {
+.mail:hover,
+.phone:hover {
   color: var(--accent-color);
 }
-/* Hero*/
+/* Hero */
+/* Чтобы отобразить белый текст временно серый фон вместо баннера */
+.hero {
+  background-color: rgba(233, 233, 227, 0.5);
+}
 .hero-title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -79,10 +89,9 @@ body {
   display: flex;
   width: 200px;
   height: 50px;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.88;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -93,44 +102,46 @@ body {
 }
 /* Section*/
 .section-title {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
 .title {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .text {
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
 /*Section About us*/
+/* Чтобы отобразить белый текст временно серый фон вместо баннера */
 .title-work {
+  background-color: rgba(47, 48, 58, 0.8);
   text-align: center;
+  line-height: 1.14;
   color: var(--primary-white-color);
+  text-transform: uppercase;
 }
 /*Section Our Team*/
-.title-team .text {
-  font-style: normal;
+.title-team,
+.text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
 .section-team .text {
-  font-weight: normal;
+  font-weight: 400;
   color: var(--text-color);
 }
+
+/*Footer*/
